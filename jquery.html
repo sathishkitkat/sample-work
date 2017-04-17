@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+  
+          	
+     <script src="https:ajax.googleapis.com/ajax/libs/juqery/3.2.0/jquery.min.js"></script>
+
+ 
+</script>
+<script>
+	$(document).ready(function(){
+		$("#p1").mouseseenter(function(){
+			alert("hi sathish p1");
+		$("p").click(function(){
+			 $(this).hide();
+            $("button").click(function(){
+            $("#div").fadeIn(); 
+             $("#div").fadeIn("slow"); 
+              $("#div").fadeIn(2000); 
+              $("button").click(function(){
+              	$("div").animate({ 
+              		left:'300px',opacity:'.100',hight:'200px',weight:'200px'});
+
+		});
+	});
+ });
+
+});
+
+</script>
+</head>
+<body>
+	<p>if you click on me,</p>
+	<p id="p1">click me away!</p>
+	<p>click me too!</p>
+	<p>if fadein different parameters</p>
+	<button>click in fadein boxes</button><br><br>
+	<div id="div1" style="width:80px;hight:80px;display:none;background-color:red;"></div><br>
+	<div id="div2" style="width:80px;hight:80px;display:none;background-color:blue;"></div><br>
+	<div id="div3" style="width:80px;hight:80px;display:none;background-color:orange;"></div><br>
+	<div id="div4" style="width:80px;hight:80px;display:none;background-color:green;"></div><br>
+
+	<button>start animation</button>
+	<p>
+		by the default,html elements have a static position,and csnnot be moved.
+	</p>
+</body>
+</html>
